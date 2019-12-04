@@ -8,6 +8,7 @@ use App\Http\Requests;
 
 use App\Post;
 
+use App\Http\Requests\PostRequest;
 
 class AdminPostsController extends Controller
 {
@@ -46,6 +47,8 @@ class AdminPostsController extends Controller
         Post::destroy($id);
         return redirect()->route('admin.posts.index');
     }
+
+
 
 
 }
